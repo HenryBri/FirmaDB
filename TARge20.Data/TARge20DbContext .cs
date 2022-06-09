@@ -15,8 +15,17 @@ namespace TARge20.Data
         public TARge20DbContext(DbContextOptions<TARge20DbContext> options)
             : base(options) { }
 
-        // näide, kuidas teha, kui lisate domaini alla ühe objekti
-        // migratsioonid peavad tulema siia libary-sse e TARge20.Data alla.
-        public DbSet<Employee> Employee { get; set; }
+        public DbSet<Ametinimetus> Ametinimetus { get; set; }
+        public DbSet<Haiguslehed> Haiguslehed { get; set; }
+        public DbSet<Harukontor> Harukontor { get; set; }
+        public DbSet<Laenutus> Laenutus { get; set; }
+        public DbSet<Lapsed> Lapsed { get; set; }
+        public DbSet<Ligipääsuload> Ligipääsuload { get; set; }
+        public DbSet<Palved> Palved { get; set; }
+        public DbSet<Peakontor> Peakontor { get; set; }
+        public DbSet<Puhkused> Puhkused { get; set; }
+        public DbSet<Tervisekontroll> Tervisekontroll { get; set; }
+        public DbSet<Töötaja> Töötaja { get; set; }
+        public DbSet<Vihjed> Vihjed { get; set; }
     }
 }
